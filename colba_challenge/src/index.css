@@ -3,3 +3,28 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+/* Footer */
+footer {
+  padding: 2%;
+}
+p.left { float: left;}
+p.right { float: right;}
+
+
+/* Header */
+header {
+  padding: 2%;
+}
+div.left { float: left; align-content: left; text-align: left;}
+div.right { float: right; align-content: right; text-align: right}
+
+
+
+header img {display: inline-block; height: 45px;}
+
+
+* {
+  box-sizing: border-box;
+}
+
