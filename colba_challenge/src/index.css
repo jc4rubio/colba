@@ -19,9 +19,21 @@ header {
 div.left { float: left; align-content: left; text-align: left;}
 div.right { float: right; align-content: right; text-align: right}
 
-
-
 header img {display: inline-block; height: 45px;}
+
+/* Content */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.grid-item2 {
+  grid-column-start: 1;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
 
 
 * {

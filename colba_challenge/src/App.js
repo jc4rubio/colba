@@ -42,7 +42,15 @@ class App extends Component {
           </div>
         </header>
         <main>
-          --Content--
+          {/* --Content-- */}
+          <div className="grid-container">
+            <div className="grid-item1">1 About</div>
+            <div className="grid-item2">2 Services</div>
+            <div className="grid-item3">3 Languages</div>
+            <div className="grid-item4">4 Qualifications</div>
+            <div className="grid-item5">5 Geographical cover</div>
+            <div className="grid-item6">6 Bank Account</div>
+          </div>
 
         </main>
         <footer>
