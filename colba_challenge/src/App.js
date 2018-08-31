@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Profile from './components/Profile';
+
 class App extends Component {
   render() {
     return (
@@ -44,8 +46,10 @@ class App extends Component {
         <main>
           {/* --Content-- */}
           <div className="grid-container">
-            <div className="grid-item1">1 About</div>
-            <div className="grid-item2">2 Services</div>
+            <div className="grid-item1">
+              <Profile />
+            </div>
+            <div className="grid-item2">2 Services></div>
             <div className="grid-item3">3 Languages</div>
             <div className="grid-item4">4 Qualifications</div>
             <div className="grid-item5">5 Geographical cover</div>
