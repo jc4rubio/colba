@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Header from './components/Header.js';
 import Profile from './components/Profile';
 import Services from './components/Services';
 import Languages from './components/Languages';
@@ -14,39 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          {/* There is another image, only with the icon (without the name 'JAROWA') */}
-
-          {/* <div className="grid-container"> */}
-
-          {/* <img src="./images/jarowa_plus.png" alt="Jarowa" className=".img-responsive"></img> */}
-          
-          <div className=".container">
-            <div className="row">
-                <div className="col left" align="left">
-                  <img src="./images/jarowa_plus.png" alt="Jarowa" className=".img-responsive"></img>
-                </div>
-                <div className="col" align="right">
-                  <div className="dropdown" >
-                    <button className="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">Order Overview
-                    <span className="caret"></span></button>
-                    <ul className="dropdown-menu">
-                      <li><a href="#!">Lawyer Lawyer</a></li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-            <br/>
-            <div className="row">
-              <div className="col left">
-                  <h2>PROFILE</h2>
-                </div>
-                <div className="col right">
-                  <button type="button" className="btn btn-light">Back</button>&nbsp;
-                  <button type="button" className="btn btn-light">Edit profile</button>&nbsp;
-                  <button type="button" className="btn btn-light">Edit offer</button>
-                </div>
-            </div>
-          </div>
+          <Header /> 
         </header>
         <main>
           {/* --Content-- */}
