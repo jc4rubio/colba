@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 import Profile from './components/Profile';
+import Services from './components/Services';
+import Languages from './components/Languages';
+import GeographicalCover from './components/GeographicalCover';
+import Qualifications from './components/Qualifications';
+import BankAccount from './components/BankAccount';
 
 class App extends Component {
   render() {
@@ -49,11 +54,21 @@ class App extends Component {
             <div className="grid-item1">
               <Profile />
             </div>
-            <div className="grid-item2">2 Services></div>
-            <div className="grid-item3">3 Languages</div>
-            <div className="grid-item4">4 Qualifications</div>
-            <div className="grid-item5">5 Geographical cover</div>
-            <div className="grid-item6">6 Bank Account</div>
+            <div className="grid-item2">
+              <Services />
+            </div>
+            <div className="grid-item3">
+              <Languages />
+            </div>
+            <div className="grid-item4">
+              <Qualifications />
+            </div>
+            <div className="grid-item5">
+              <GeographicalCover/>
+            </div>
+            <div className="grid-item6">
+              <BankAccount />
+            </div>
           </div>
 
         </main>
