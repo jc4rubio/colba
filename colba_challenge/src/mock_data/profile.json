@@ -1,0 +1,156 @@
+{
+    "personal_info": {
+    
+        "title": "Prof.",
+        "name": "Juanjo Marti",
+        "age": "68",
+        "fullname": "Juanjo M Marti",
+        "address": "Alte Landstrasse 21 8800 Thalwill ZH CH",
+        "phone1": "+34658995566",
+        "phone2": "+41555555555",
+        "mail": "juanjo@colba.es",
+        "website": "http://colba.es",
+        "status": "Available"
+    },
+    "languages": [
+        {
+            "language": "german",
+            "level": "1",
+            "description": "Advanced"
+        },
+        {
+            "language": "english",
+            "level": "2",
+            "description": "Safe to negotiate"
+        }
+    ],
+
+    "qualifications": {
+        "lawyer's_license": true,
+        "yearOfLicense": 1995,
+        "qualifications": [
+            "Certified Specialist SAV Labour Law",
+            "Specialist lawyer SAV Inheritance Law",
+            "Specialist Lawyer SAV Construction and Real Estate Law",
+            "Specialist lawyer SAV Liability and Insurance Law",
+            "Certified Specialist SAV Family Law"
+        ]
+    },
+
+    "geographicalCover": [
+        "CH - Aargovia",
+        "Appenzell",
+        "Ausserrhoden",
+        "Zurich",
+        "Basel-Landschaft",
+        "Appenzell",
+        "Innerrhoden"
+    ],
+
+    "bankAccount": {
+        "owner": "Juanjo M Marti",
+        "IBAN": "CH48 00700 0110 0009 7178 4",
+        "VAT": "47529348238"
+
+    },
+    "services": [
+        {
+            "services1" : { 
+                "category": "Construction and Real Estate Law",
+                "services": [
+                    {
+                        "name": "Builder's lien law",
+                        "fee": 35,
+                        "currency": "CHF"
+                    },
+                    {
+                        "name": "Builder's lien law",
+                        "fee": 35,
+                        "currency": "CHF"
+                    }
+                ]
+            },
+            "services2" : { 
+                "category": "Construction and Real Estate Law",
+                "services": [
+                    {
+                        "name": "Construction and Real Estate Law",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    },
+                    {
+                        "name": "Expropriation law",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    },
+                    {
+                        "name": "Public construction and planning law",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    },
+                    {
+                        "name": "Rental and lease law (real estate)",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    },
+                    {
+                        "name": "Rights of neighbours",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    }
+                ]
+            },
+            "services3" : { 
+                "category": "Labour Law",
+                "services": [
+                    {
+                        "name": "Disputes arising from collective labour a...",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    },
+                    {
+                        "name": "Equality Law",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    },
+                    {
+                        "name": "Private labour law",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    },
+                    {
+                        "name": "Public personnel law",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    }
+                ]
+            },
+            "services4" : { 
+                "category": "Social insurance Law",
+                "services": [
+                    {
+                        "name": "Daily sickness benefit (KTG)",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    },
+                    {
+                        "name": "Disability insurance (IV)",
+                        "fee": 35,
+                        "currency": "CHF",
+                        "rate": 5
+                    }
+                ]
+            }        
+        }
+    ]
+}
