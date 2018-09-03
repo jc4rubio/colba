@@ -1,0 +1,21 @@
+/* Header */
+
+Header {
+    padding: 2%;
+}
+
+div.left { 
+    float: left;
+    align-content: left;
+    text-align: left;
+}
+div.right {
+    float: right;
+    align-content: right;
+    text-align: right
+}
+
+Header img {
+    display: inline-block;
+    height: 45px;
+}
