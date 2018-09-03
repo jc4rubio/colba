@@ -4,17 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-/* Header */
-/*
-header {
-  padding: 2%;
-}
-div.left { float: left; align-content: left; text-align: left;}
-div.right { float: right; align-content: right; text-align: right}
-
-header img {display: inline-block; height: 45px;}
-*/
-
 /* Content */
 .grid-container {
   display: grid;
@@ -27,8 +16,6 @@ header img {display: inline-block; height: 45px;}
   grid-row-start: 1;
   grid-row-end: 5;
 }
-
-
 
 * {
   box-sizing: border-box;

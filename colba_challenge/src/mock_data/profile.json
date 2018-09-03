@@ -53,104 +53,99 @@
         "VAT": "47529348238"
 
     },
-    "services": [
+    "all_services": [
+        { 
+            "category_name": "Construction and Real Estate Law",
+            "services": [
+                {
+                    "name": "Builder's lien law",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Building contract law",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Construction and Real Estate Law",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Expropriation law",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Public construction and planning law",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Rental and lease law (real estate)",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Rights of neighbours",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                }
+            ]
+        },
         {
-            "services1" : { 
-                "category": "Construction and Real Estate Law",
-                "services": [
-                    {
-                        "name": "Builder's lien law",
-                        "fee": 35,
-                        "currency": "CHF"
-                    },
-                    {
-                        "name": "Builder's lien law",
-                        "fee": 35,
-                        "currency": "CHF"
-                    }
-                ]
-            },
-            "services2" : { 
-                "category": "Construction and Real Estate Law",
-                "services": [
-                    {
-                        "name": "Construction and Real Estate Law",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    },
-                    {
-                        "name": "Expropriation law",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    },
-                    {
-                        "name": "Public construction and planning law",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    },
-                    {
-                        "name": "Rental and lease law (real estate)",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    },
-                    {
-                        "name": "Rights of neighbours",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    }
-                ]
-            },
-            "services3" : { 
-                "category": "Labour Law",
-                "services": [
-                    {
-                        "name": "Disputes arising from collective labour a...",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    },
-                    {
-                        "name": "Equality Law",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    },
-                    {
-                        "name": "Private labour law",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    },
-                    {
-                        "name": "Public personnel law",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    }
-                ]
-            },
-            "services4" : { 
-                "category": "Social insurance Law",
-                "services": [
-                    {
-                        "name": "Daily sickness benefit (KTG)",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    },
-                    {
-                        "name": "Disability insurance (IV)",
-                        "fee": 35,
-                        "currency": "CHF",
-                        "rate": 5
-                    }
-                ]
-            }        
+            "category_name": "Labour Law",
+            "services": [
+                {
+                    "name": "Disputes arising from collective labour a...",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Equality Law",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Private labour law",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Public personnel law",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                }   
+            ]
+        },
+        {
+            "category_name": "Social insurance Law",
+            "services": [
+                {
+                    "name": "Daily sickness benefit (KTG)",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                },
+                {
+                    "name": "Disability insurance (IV)",
+                    "fee": 35,
+                    "currency": "CHF",
+                    "rate": 5
+                }    
+            ]
         }
     ]
 }
