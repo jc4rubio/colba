@@ -5,6 +5,8 @@ body {
 }
 
 /* Content */
+
+/*
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -17,7 +19,8 @@ body {
   grid-row-end: 5;
 }
 
-* {
+
+{
   box-sizing: border-box;
 }
-
+*/

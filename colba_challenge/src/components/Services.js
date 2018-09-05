@@ -20,12 +20,13 @@ class Services extends Component {
 
 
     }
+    
 
     render() {
         return (
             <div>
                 <div>Services</div>
-                <p>{this.services[0].category_name}</p>
+                {/*this.addCategory()*/}
                 Mock: {this.nservices} <br />
                 <ServiceItem />
             </div>

@@ -11,7 +11,7 @@ class ServiceItem extends Component {
             currency,
             rate
         };
-        this.state;
+        this.status;
     }*/
 
     constructor() {
@@ -20,6 +20,7 @@ class ServiceItem extends Component {
             name : 'Servicio 1',
             rate : 5
         }
+        this.status = 'Hide';
     }
 
 
@@ -28,7 +29,8 @@ class ServiceItem extends Component {
 
         return (
             <div>
-                <div> Name: {this.services.name}</div>
+                <div><p> Name: {this.services.name}</p><p>{this.status}</p></div>
+                <div> Rate: {this.services.rate}</div>
                 <div> Rate: {this.services.rate}</div>
             </div>
             
