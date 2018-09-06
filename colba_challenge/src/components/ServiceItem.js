@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './ServiceItem.js';
+
 class ServiceItem extends Component {
     
     /*constructor(serviceItem) {
@@ -18,21 +20,40 @@ class ServiceItem extends Component {
         super();
         this.services = {
             name : 'Servicio 1',
-            rate : 5
+            fee : 35,
+            currency: "CHF",
+            rate: 5
         }
         this.status = 'Hide';
     }
 
-
+    /* TODO: Add functionality to span to toggle divs. That is, change span name; change icon; and toggle between div1 and div2*/
 
     render() {
 
         return (
-            <div>
-                <div><p> Name: {this.services.name}</p><p>{this.status}</p></div>
-                <div> Rate: {this.services.rate}</div>
-                <div> Rate: {this.services.rate}</div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-6">{this.services.name}</div>
+                    {/* <div className="col-6 text-right"><span id={this.services.name} className="">Show</span></div> */}
+                    <div className="col-6 text-right">
+                        <span className="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Show ^
+                        </span>
+                    </div>
+                </div>
+                {/* Div 1: Shown by default */}
+                <div className="row visible">
+                    <div className="col-4">{"(-) "+this.services.rate} Stars</div> {/* TODO: Stars*/}
+                    <div className="col-8 right"><span className="feeShown">{this.services.fee + " " + this.services.currency + " per hour"}</span></div> 
+                </div>
+                {/* Div 2: Hidden by default */}
+                <div className="row invisible">
+                    <div className="col-6">Fee</div>
+                    <div className="col-6 text-right"><span className="feeHidden">{this.services.fee + " " + this.services.currency + " per hour"}</span></div> 
+                </div>
             </div>
+
             
         );
     }
