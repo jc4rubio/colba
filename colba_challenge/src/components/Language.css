@@ -1,5 +1,12 @@
 .level {
     height: 10px;;
     width: 60%;
+}
+
+.levelStrong {
     background-color: orange;
+}
+
+.levelWeak {
+    background-color: rgb(248, 196, 177);
 }
