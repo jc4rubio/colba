@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './profile.css';
+import './Profile.css';
 
 import Languages from './Languages';
 import GeographicalCover from './GeographicalCover';
@@ -16,35 +16,6 @@ class Profile extends Component {
 
     }
    
-    
-   /*
-    render() {
-       return (
-           <div>
-               <div className=".container">
-                    <div className="row">
-                        <div className="col">
-                            <img src="./images/business-man_profile.jpg" className="rounded-circle profile-picture" alt="profile"></img>
-                        </div>
-                        <div className="col text-left">
-                            {/* Next step: Data from a service *//*}
-                            <b>Name</b><button type="button" className="status-btn btn btn-success float-right">&#x2714;<br/>Available</button><br />
-                            age<br />
-                            fullName<br />
-                            address<br />
-                            phone1 phone2<br />
-                            mail<br />
-                            website
-                        </div>
-                    </div>
-                </div>
-                <hr />
-           </div>
-            
-       );
-    
-   } 
-   */
   renderStatusButtom = () => {
 
     let buttonIcon;
@@ -78,35 +49,42 @@ class Profile extends Component {
   render() {
     return (
         <div>
-            <div className="row">
+            <div className="row border-bottom border-1">
                 <div className="col-5">
                     <img src="./images/business-man_profile.jpg" className="rounded-circle .img-fluid. profile-picture" alt="profile"></img>
                 </div>
-                <div className="col-5 text-left">
-                    {/* Next step: Data from a service */}
+                <div className="col-6 text-left">
                     <p className="font-weight-bold">{this.personal_info.title} {this.personal_info.name}</p>
-                    <p>{this.personal_info.age}</p>
-                    <p>{this.personal_info.fullName}</p>
-                    <p>{this.personal_info.address}</p>
-                    <p>{this.personal_info.phone1} {this.personal_info.phone2}</p>
-                    <p>{this.personal_info.mail}</p>
-                    <p>{this.personal_info.website}</p>
+                    {/* Male icon: &#9794; Female icon: &#9792; Note: I choose female icon to do a correct binding to the template (picture of reference for this challenge), but the user is a man (male)*/}
+                    <p><span className="border rounded ageBox px-2 py-1">&#9792;&nbsp;{this.personal_info.age}&nbsp;Years</span></p> {/* TODO: Choose gender icon depending on user data*/}
+                    <p><span className="mb-2 font-weight-bold">{this.personal_info.fullName}</span></p>
+                    <p><span className="small">{this.personal_info.address}</span></p>
+                    <p>&#9742;&nbsp;<span className="small">{this.personal_info.phone1} {this.personal_info.phone2}</span></p> {/* TODO: Use a more beautiful library for icons */}
+                    <p>&#9993;&nbsp;<a href="mailto:{this.personal_info.mail}">{this.personal_info.mail}</a></p> {/* TODO: Insert js object into jsx string*/}
+                    <p>&#9993;&nbsp;<a href= "#!">{this.personal_info.website}</a></p> {/*TODO: www icon*/}
+                    <p><i className="material-icons"></i>&#9993;&nbsp;<a href= "#!">{this.personal_info.website}</a></p> {/*TODO: www icon*/}
                 </div>
-                <div className="col-2">
+                <div className="col-1">
                    {this.renderStatusButtom()} {/*TODO*/}
                 </div>
             </div>
-            <div className="row">
+            <div className="row border-bottom border-1">
 
                 <div className="col-12">
                     <Languages />
                 </div>
+            </div>
+            <div className="row border-bottom border-1">
                 <div className="col-12">
                     <Qualifications />
                 </div>
+            </div>
+            <div className="row border-bottom border-1">
                 <div className="col-12">
                     <GeographicalCover/>
                 </div>
+            </div>
+            <div className="row border-bottom border-1">
                 <div className="col-12">
                     <BankAccount />
                 </div>

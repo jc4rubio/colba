@@ -4,7 +4,8 @@
         "title": "Prof.",
         "name": "Juanjo Marti",
         "age": "68",
-        "fullname": "Juanjo M Marti",
+        "gender": "male",
+        "fullName": "Juanjo M Marti",
         "address": "Alte Landstrasse 21 8800 Thalwill ZH CH",
         "phone1": "+34658995566",
         "phone2": "+41555555555",
@@ -14,12 +15,12 @@
     },
     "languages": [
         {
-            "language": "german",
+            "language": "German",
             "level": "1",
             "description": "Advanced"
         },
         {
-            "language": "english",
+            "language": "English",
             "level": "2",
             "description": "Safe to negotiate"
         }
@@ -53,7 +54,7 @@
         "VAT": "47529348238"
 
     },
-    
+
     "all_services": [
         { 
             "category_name": "Construction and Real Estate Law",
