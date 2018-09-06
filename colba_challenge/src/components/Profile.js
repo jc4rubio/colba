@@ -13,32 +13,37 @@ class Profile extends Component {
     constructor() {
         super();
         this.personal_info = personal_info;
-
+        if (personal_info.availability ==="Available") {
+            this.available = 1;
+        } else {
+            this.available = 0;
+        }
     }
    
-  renderStatusButtom = () => {
+//   I tried this way too but I can't render the availability box properly
+  renderAvailabilityButtom = () => {
 
-    let buttonIcon;
+    // let buttonIcon; 
     let buttonText;
     let buttonClassName;
-    const status = this.personal_info.status;
+    const availability = this.personal_info.availability;
     let available;
-    let html_code;
+    // let html_code;
 
-    if (status === "Available") {
+    if (availability === "Available") {
         
-        buttonIcon = "&#x2714;";
-        buttonText = status; /* TO DO */
+        // buttonIcon = "&#x2714;";
+        buttonText = availability; /* TO DO */
         buttonClassName = "status-btn btn btn-success float-right";
         available = true;
         
     }
     else {
-        buttonIcon = "&#9747;";
+        // buttonIcon = "&#9747;";
         buttonText = "Not available"; /* TO DO */
         buttonClassName = "status-btn btn btn-danger float-right";
     }
-    html_code = '<button  type="button" className='+{buttonClassName}+'>'+{buttonText}+'</button>'; /* TO DO */
+    // html_code = '<button  type="button" className='+{buttonClassName}+'>'+{buttonText}+'</button>'; /* TO DO */
 
     // return (<button  type="button" className={buttonClassName}>{{__html:buttonText}}</button>);
     // return (<div dangerouslySetInnerHTML={{__html: html_code}} />);
@@ -50,7 +55,7 @@ class Profile extends Component {
     return (
         <div>
             <div className="row border-bottom border-1">
-                <div className="col-5">
+                <div className="col-4 mx-0 px-0">
                     <img src="./images/business-man_profile.jpg" className="rounded-circle .img-fluid. profile-picture" alt="profile"></img>
                 </div>
                 <div className="col-6 text-left">
@@ -61,11 +66,15 @@ class Profile extends Component {
                     <p><span className="small">{this.personal_info.address}</span></p>
                     <p>&#9742;&nbsp;<span className="small">{this.personal_info.phone1} {this.personal_info.phone2}</span></p> {/* TODO: Use a more beautiful library for icons */}
                     <p>&#9993;&nbsp;<a href="mailto:{this.personal_info.mail}">{this.personal_info.mail}</a></p> {/* TODO: Insert js object into jsx string*/}
-                    <p>&#9993;&nbsp;<a href= "#!">{this.personal_info.website}</a></p> {/*TODO: www icon*/}
+                    <p>&#9993;&nbsp;<a href= {this.personal_info.website}>{this.personal_info.website}</a></p> {/*TODO: www icon*/}
                 </div>
-                <div className="col-1">
-                   {this.renderStatusButtom()} {/*TODO*/}
-                </div>
+                <div className="col-2 px-2 mx-0 text-center">
+                    {/* !! */}
+                    {/* <div className={"box rounded availability_box mg-0 pd-0 "+this.available?"available": "unavailable"}>{this.available ? 'V':'X'}<br />{this.personal_info.availability}</div> TODO: Doesn't work! */}
+                    <div className="box rounded availability_box m-0 pd-2 available">&#x2714;<br />Available</div> {/* This is what I want v1*/}
+                    {/* <div className="box rounded availability_box mg-0 pd-0 unavailable">&#9747;<br />Unavailable</div> This is what I want v2 */}
+                   {/* {this.renderAvailavilityButtom()} T */}
+                   </div>
             </div>
             <div className="row border-bottom border-1">
 
