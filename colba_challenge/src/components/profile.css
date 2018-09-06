@@ -1,8 +1,36 @@
 .profile-picture {
-    width: 50%; 
+    max-width: 90%;
 }
 
 .status-btn {
     font-size: xx-small;
     margin-right: 5%;  /* Provisional */
+}
+
+.ageBox {
+    border-radius: 20px !important;
+    font-size: smaller;
+    color: gray;
+}
+
+.sectionTitle {
+    color: green;
+    margin-bottom: 5%;
+}
+
+.availability_box {
+    display: block;
+    width: 80%;
+    height: auto;
+    font-size: 0.5em;
+    color: white;
+}
+
+.available {
+    background-color: green;
+
+}
+
+.unavailable {
+    background-color: red;
 }

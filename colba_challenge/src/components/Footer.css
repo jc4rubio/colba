@@ -1,0 +1,7 @@
+/* TODO: This doesn't work: FOOTER DOESN'T GO DOWN IF THERE IS NO CONTENT */
+/* footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px; /* This value has to be the same that main's padding-bootom -> App.css */
+/*} */
