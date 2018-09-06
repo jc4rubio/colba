@@ -14,7 +14,7 @@ class Qualifications extends Component {
     render() {
         return (
             <div className="container mt-1 pb-2">
-                <div className="h5 sectionTitle">Qualifications</div>
+                <div className="h5 sectionTitle">QUALIFICATIONS</div>
                 <div className="row">
                     <div className="col-5">Lawyer's license</div>
                     <div className="col-7 small">{this.qualifications.lawyersLicense?'Yes':'No'}</div>
