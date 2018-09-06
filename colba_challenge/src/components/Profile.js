@@ -62,7 +62,6 @@ class Profile extends Component {
                     <p>&#9742;&nbsp;<span className="small">{this.personal_info.phone1} {this.personal_info.phone2}</span></p> {/* TODO: Use a more beautiful library for icons */}
                     <p>&#9993;&nbsp;<a href="mailto:{this.personal_info.mail}">{this.personal_info.mail}</a></p> {/* TODO: Insert js object into jsx string*/}
                     <p>&#9993;&nbsp;<a href= "#!">{this.personal_info.website}</a></p> {/*TODO: www icon*/}
-                    <p><i className="material-icons"></i>&#9993;&nbsp;<a href= "#!">{this.personal_info.website}</a></p> {/*TODO: www icon*/}
                 </div>
                 <div className="col-1">
                    {this.renderStatusButtom()} {/*TODO*/}
@@ -84,7 +83,7 @@ class Profile extends Component {
                     <GeographicalCover/>
                 </div>
             </div>
-            <div className="row border-bottom border-1">
+            <div className="row">
                 <div className="col-12">
                     <BankAccount />
                 </div>

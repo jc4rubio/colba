@@ -9,14 +9,11 @@ class Languages extends Component {
     constructor() {
         super();
         this.languages = languages;
-        console.log('Languages: '+languages.length);
-        console.log(languages)
-
     }
 
     render() {
         return (
-            <div className="container pb-2">
+            <div className="container mt-1 pb-2">
                 <div className="h5 sectionTitle">Languages</div>
                 <div className="row justify-content-start"> {/* TODO: Do it dinamically | Add level bars and description*/}
                     <div className="col-4">{this.languages[0].language}</div>

@@ -27,7 +27,7 @@
     ],
 
     "qualifications": {
-        "lawyer's_license": true,
+        "lawyersLicense": 1,
         "yearOfLicense": 1995,
         "qualifications": [
             "Certified Specialist SAV Labour Law",
