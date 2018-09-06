@@ -1,5 +1,7 @@
 .App {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* min-height: 100%;
+  position: relative; */
 }
 
 .App-title {
@@ -13,4 +15,11 @@
 
 .border-3 {
   border-width:3px !important;
+}
+
+main {
+  min-height: 100%;
+  position: relative;
+  /* height: 100%; */
+  padding-bottom: 20px;  /* This value has to be the same that footer's height-> Footer.css */
 }

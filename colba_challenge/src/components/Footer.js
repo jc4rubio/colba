@@ -6,7 +6,7 @@ class Footer extends Component {
 
     render() {
         return (
-            <footer>
+            <footer className="page-footer">
                 <div className="container">
                     <div className="row justify-content-between my-2 row border-top border-2 pt-2">
                         <div className="col">
