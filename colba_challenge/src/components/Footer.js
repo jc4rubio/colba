@@ -5,9 +5,8 @@ class Footer extends Component {
     render() {
         return (
             <footer>
-                <hr/>
                 <div className="container">
-                    <div className="row justify-content-between my-2">
+                    <div className="row justify-content-between my-2 row border-top border-2">
                         <div className="col">
                             <p>Copyright&copy; 2018 JAROWA AG</p>
                         </div>
