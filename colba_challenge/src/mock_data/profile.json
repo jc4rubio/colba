@@ -11,7 +11,7 @@
         "phone2": "+41555555555",
         "mail": "juanjo@colba.es",
         "website": "http://colba.es",
-        "status": "Available"
+        "availability": "Available"
     },
     "languages": [
         {
