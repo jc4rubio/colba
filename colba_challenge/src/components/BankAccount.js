@@ -9,7 +9,6 @@ class BankAccount extends Component {
     constructor() {
         super();
         this.bankAccount = bankAccount;
-        console.log('Bank Acoount: '+this.bankAccount);
     }
     
     render() {
