@@ -29,7 +29,6 @@ class Language extends Component {
                     {this.description}
                 </div>
                 <div className="col-12 col-align-self-start">
-                    {/*TODO: Esto es una chapuza...*/}
                     {/*TODO: Iterate depending on level*/}
                     <div className="row my-2 justify-content-around">
                         <div className="col-3 box rounded level"></div>
