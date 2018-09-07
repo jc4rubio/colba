@@ -37,8 +37,9 @@ class ServiceItem extends Component {
                     <div className="col-6">{this.services.name}</div>
                     {/* <div className="col-6 text-right"><span id={this.services.name} className="">Show</span></div> */}
                     <div className="col-6 text-right">
-                        <span className="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            Show ^
+                        <span className="font-weight-bold text-success" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Show <img className="img-fluid" src="/images/arrow1-down.png" alt=""></img> {/*State 1: hidden (default) */}
+                            Hide <img className="img-fluid" src="/images/arrow1-up.png" alt=""></img> {/*State 1: shown => TODO: Remove it*/}
                         </span>
                     </div>
                 </div>
