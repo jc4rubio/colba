@@ -4,7 +4,7 @@ import './Header.css';
 class Header extends Component {
    
     orderOverview = () =>  { /*TODO: Handling events*/
-        console.log('Click!'); 
+        // console.log('Click!'); 
         // alert('Hello from Header.js');
     }
 
