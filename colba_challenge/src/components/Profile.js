@@ -56,7 +56,7 @@ class Profile extends Component {
         <div>
             <div className="row border-bottom border-1">
                 <div className="col-4 mx-0 px-0">
-                    <img src="./images/business-man_profile.jpg" className="rounded-circle .img-fluid. profile-picture" alt="profile"></img>
+                    <img src="./images/business-man_profile.jpg" className="rounded-circle img-fluid profile-picture" alt="profile"></img>
                 </div>
                 <div className="col-6 text-left">
                     <p className="font-weight-bold">{this.personal_info.title} {this.personal_info.name}</p>
