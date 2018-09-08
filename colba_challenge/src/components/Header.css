@@ -1,6 +1,6 @@
 /* Header */
 
-Header img { /* TODO: Responsive */
+.header_logo { /* TODO: Responsive */
     display: inline-block;
     height: 45px;
 }

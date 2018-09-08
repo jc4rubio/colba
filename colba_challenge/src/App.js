@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import logo from './logo.svg'; // Never used
 import './App.css';
 
-import Header from './components/Header.js';
-import Footer from './components/Footer.js';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Profile from './components/Profile';
 import Services from './components/Services';
 
