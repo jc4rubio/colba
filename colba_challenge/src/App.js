@@ -8,6 +8,12 @@ import Profile from './components/Profile';
 import Services from './components/Services';
 
 class App extends Component {
+
+  // NavigationButtons
+  showAlert = (id, msg) => {
+    alert(`Click on "${msg}" (Button id: ${id})`);
+  };
+
   render() {
     return (
       <div className="App">
@@ -23,9 +29,9 @@ class App extends Component {
               </div>
               <div className="col-9 border-bottom border-black">
                 <div className="float-right">
-                  <button type="button" className="btn btn-light navigation_buttom">Back</button>&nbsp; {/*TODO*/}
-                  <button type="button" className="btn btn-light navigation_buttom">Edit profile</button>&nbsp; {/*TODO*/}
-                  <button type="button" className="btn btn-light navigation_buttom">Edit offer</button> {/*TODO*/}
+                  <button type="button" className="btn btn-light navigation_buttom" id="btn1" onClick={this.showAlert.bind(this, "btn1","Back")}>Back</button> {/*TODO*/}
+                  <button type="button" className="btn btn-light navigation_buttom mx-1" id="btn2" onClick={this.showAlert.bind(this, "btn2","Edit profile")}>Edit profile</button> {/*TODO*/}
+                  <button type="button" className="btn btn-light navigation_buttom" id="btn3" onClick={this.showAlert.bind(this, "btn3","Edit offer")}>Edit offer</button> {/*TODO*/}
                 </div>
               </div>
             </div>
