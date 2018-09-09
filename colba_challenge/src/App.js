@@ -9,10 +9,34 @@ import Services from './components/Services';
 
 class App extends Component {
 
+  constructor() {
+    super();
+    this.section_title = React.createRef();
+  }
+
   // NavigationButtons
-  showAlert = (id, msg) => {
-    alert(`Click on "${msg}" (Button id: ${id})`);
-  };
+  changeTitle = (id, msg) => {
+    
+    //alert(`Click on "${msg}" (Button id: ${id})`);
+    switch(id){
+      case "btn1":
+        if (this.section_title.current.textContent === 'PROFILE') {
+          this.section_title.current.textContent = "HOME";
+        } else {
+          this.section_title.current.textContent = "PROFILE";
+        }
+        break;
+      case "btn2": 
+        this.section_title.current.textContent = "EDIT PROFILE";
+        break;
+      case "btn3": 
+        this.section_title.current.textContent = "EDIT OFFER";
+        break;
+      default: 
+        this.section_title.current.textContent = "PROFILE";
+    }
+
+  }
 
   render() {
     return (
@@ -25,13 +49,13 @@ class App extends Component {
             {/* Navigation? */}
             <div className="row my-4 justify-content-between"> {/* Navigation? */}
               <div className="col-3 border-bottom border-success border-3">
-                <h2>PROFILE</h2>
+                <h2 ref={ this.section_title}>PROFILE</h2>
               </div>
               <div className="col-9 border-bottom border-black">
                 <div className="float-right">
-                  <button type="button" className="btn btn-light navigation_buttom" id="btn1" onClick={this.showAlert.bind(this, "btn1","Back")}>Back</button> {/*TODO*/}
-                  <button type="button" className="btn btn-light navigation_buttom mx-1" id="btn2" onClick={this.showAlert.bind(this, "btn2","Edit profile")}>Edit profile</button> {/*TODO*/}
-                  <button type="button" className="btn btn-light navigation_buttom" id="btn3" onClick={this.showAlert.bind(this, "btn3","Edit offer")}>Edit offer</button> {/*TODO*/}
+                  <button type="button" className="btn btn-light navigation_buttom" id="btn1" onClick={this.changeTitle.bind(this, "btn1","Back")}>Back</button> {/*TODO*/}
+                  <button type="button" className="btn btn-light navigation_buttom mx-1" id="btn2" onClick={this.changeTitle.bind(this, "btn2","Edit profile")}>Edit profile</button> {/*TODO*/}
+                  <button type="button" className="btn btn-light navigation_buttom" id="btn3" onClick={this.changeTitle.bind(this, "btn3","Edit offer")}>Edit offer</button> {/*TODO*/}
                 </div>
               </div>
             </div>
