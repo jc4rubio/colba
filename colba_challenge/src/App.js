@@ -49,7 +49,7 @@ class App extends Component {
             {/* Navigation? */}
             <div className="row my-4 justify-content-between"> {/* Navigation? */}
               <div className="col-3 border-bottom border-success border-3">
-                <h2 ref={ this.section_title}>PROFILE</h2>
+                <h2 ref={this.section_title}>PROFILE</h2>
               </div>
               <div className="col-9 border-bottom border-black">
                 <div className="float-right">
