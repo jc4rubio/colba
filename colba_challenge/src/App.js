@@ -17,7 +17,6 @@ class App extends Component {
   // NavigationButtons
   changeTitle = (id, msg) => {
     
-    //alert(`Click on "${msg}" (Button id: ${id})`);
     switch(id){
       case "btn1":
         if (this.section_title.current.textContent === 'PROFILE') {
@@ -47,7 +46,7 @@ class App extends Component {
           <div className="container">
             
             {/* Navigation? */}
-            <div className="row my-4 justify-content-between"> {/* Navigation? */}
+            <div className="row my-4 justify-content-between">
               <div className="col-3 border-bottom border-success border-3">
                 <h2 ref={this.section_title}>PROFILE</h2>
               </div>
