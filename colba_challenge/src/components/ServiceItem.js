@@ -79,7 +79,7 @@ export default class ServiceItem extends Component {
                 
                     <div className="col-9 text-truncate px-0">{this.service.name}</div>
                     <div className="col-3 text-right px-0">
-                        <span className="font-weight-bold text-success text-nowrap" onClick={this.toggleContent}>
+                        <span className="font-weight-bold text-success text-nowrap toggleContent" onClick={this.toggleContent}>
                             {this.operation_text} 
                             <img className="img-fluid ml-1" src={this.state.src_img} alt=""></img>
                         </span>
