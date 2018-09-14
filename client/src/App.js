@@ -60,10 +60,10 @@ class App extends Component {
             </div>
             
             <div className="row">
-              <div className="col-7">
+              <div className="col-md-7 col- col-sm-12">
                 <Profile />
               </div>
-              <div className="col-5">
+              <div className="col-md-5 col-sm-12">
                 <Services />
               </div>
             </div>
