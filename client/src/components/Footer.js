@@ -1,10 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './Footer.css';
 
-class Footer extends Component {
 
-    render() {
+
+export default class Footer extends React.Component {
+
+    showHelp = () => {
+        alert('Redirecting to support page... (Or not)');
+    }
+
+    render () {
+
         return (
             <footer className="page-footer">
                 <div className="container">
@@ -13,13 +20,12 @@ class Footer extends Component {
                             <p>Copyright&copy; 2018 JAROWA AG</p>
                         </div>
                         <div className="col">
-                            <p className="text-right"><a href="#!" >Help</a> | <a href="#!">Report error</a></p>
+                            <p className="text-right" onClick={this.showHelp}><a href="#!" >Help</a> | <a href="mailto:juancarlosrubiogarcia89@gmail.com">Report error</a></p>
                         </div>
                     </div>
                 </div>
             </footer>
         );
     }
+    
 }
-
-export default Footer;

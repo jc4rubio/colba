@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './Language.css';
 
 
-class Language extends Component {
+export default class Language extends React.Component {
 
     constructor(props) {
         super(props);
+        console.log('Props...');
+        
+        console.log(props);
         this.language = props.language;
         this.description = props.description;
         this.level = props.level;
@@ -61,7 +64,7 @@ class Language extends Component {
         return (
             <div className="container text-center">
                 <div className="col-12 small">
-                    {this.description}
+                    <span className="text-truncate">{this.description}</span>
                 </div>
                 <div className="col-12 col-align-self-start">
                     {/*TODO: Iterate depending on level*/}
@@ -74,12 +77,10 @@ class Language extends Component {
                     </div>
                 </div>
                 <div className="col-12 my-3">
-                    {this.language}
+                    <span className="font-weight-bold text-truncate">{this.language}</span>
                 </div>
             </div>
         );
     }
 
 }
-
-export default Language;

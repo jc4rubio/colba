@@ -15,13 +15,27 @@ DONE:
 - Add more elements to the content view
 - Create components to redistrubute the logic
 - Improve CSS
+- Add functionality to the components through react.js
+- Components: work in parent-child communication
 
 
 TO DO:
 
-
-- Add functionality to the components through react.js
-- Components: work in parent-child communication
 - Iterate over elements and create content dinamically
 - Create a dedicate (mock) service to provide data, instead providing directly from every file through imports.
 - ...
+
+Note:
+
+- Working on test: Currently test with jest doesn't work. This error is thrown:
+
+Why is not working?
+
+  FAIL  src\Link.test.js
+
+  ● Test suite failed to run
+
+    TypeError: Path must be a string. Received undefined
+
+      at assertPath (path.js:28:11)
+      at Object.relative (path.js:558:5)
